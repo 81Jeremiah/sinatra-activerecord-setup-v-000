@@ -1,4 +1,8 @@
 class ChangeDogs < ActiveRecord::Migration
   def change
-  end
+    create_table :dogs do |t|
+       t.string :name
+       t.string :breed
+     end
+   end
 end
